@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.header-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: midnightblue;
+    align-items: center;
+    padding: 0.5% 0;
+}
+
+.header-container-item1{
+    width: 10%;
+    
+}
+
+
+
+.header-container-item2{
+    display: flex;
+    width: 80%;
+    color: white;
+    font-size: 40px;
+    justify-content: center;
+    font-family: 'Indie Flower', cursive;
+}
+
+.header-container-item3{
+    width: 10%;
+}
+
+.subheader-container{
+    width: 90%;
+    font-size: 44px;
+    color: white;
+    justify-content: center;
+    font-family: 'Monoton', cursive;
+    padding: 5%;
+    text-align: center;
+    line-height: 1.2;
+    font-weight: bolder;
+    background-image: url(https://cdn.defenseone.com/media/img/upload/2020/03/10/AP_20066479270102/defense-large.jpg);
+}
+
+    .body-container{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    width: 90%;
+    background-color:silver;
+    font-family: 'El Messiri', sans-serif;
+}
+
+.body-container-item{
+    text-align: center;
+    line-height: 1.5;
+    font-size: large;
+}
+
+.footer-container{
+    text-align: center;
+    width: 100%;
+    background-color: midnightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.footer-container-item{
+    color: white;
+    font-size: 25px;
+    font-weight: 1000;
+    font-style: italic;
+    font-family: 'Indie Flower', cursive;
+}
+
+a{
+    color: rgb(21, 199, 175);
+    font-size: 18px;
+    font-family: 'Indie Flower', cursive;
+}
+

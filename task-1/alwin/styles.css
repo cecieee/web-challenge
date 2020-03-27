@@ -1,0 +1,247 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+header
+{
+    background-image:url(Background.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+
+}
+.main-nav
+{
+    float: right;
+    list-style: none;
+    margin-top:30px;
+}
+
+.main-nav li
+{
+    display: inline-block;
+}
+
+.main-nav li a
+{
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+}
+
+.main-nav li.active a
+{
+    border: 1px solid white;
+
+}
+
+
+
+body
+{
+    font-family: monospace ;
+}
+
+.row
+{
+    max-width: 1200px;
+    margin: auto;
+
+}
+
+.hero
+{
+    position: absolute;
+    width: 900px;
+    margin-left: 0px;
+    margin-top: 0px;
+
+}
+
+h1
+{
+    color: white;
+    text-transform: uppercase;
+    font-size: 100px;
+    text-align: center;
+    margin-top: 280px;
+    margin-left: 450px;
+}
+
+.pre img
+
+{
+   width: 800px;
+   height: auto;
+   margin-top: 350px;
+   margin-left: 280px;         
+}
+
+
+p
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 20px;
+    width: 1200px;
+    text-align: left;
+    margin-top: 80;
+    margin-left: 70;
+}
+.button
+{
+    margin-top: 80px;
+    margin-left: 600px;
+    margin-bottom: 80px;
+}
+.btn
+{
+    border: 1px solid white;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    margin-right: 5px;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+.btn-one
+{
+    background-color:#ff0000;
+    font-family: "Roboto", sans-serif;
+
+}
+
+
+
+.btn-one:hover
+{
+    background-color: lightseagreen ;
+    transition: all 0.5s ease-in;
+}
+
+.main-nav li a:hover
+{
+    border: 1px solid white;
+}
+
+@media (max-width: 1365px)
+{
+    header
+{
+    background-image:url(Background.jpg);
+    width: 1400px;
+    height: 50vh;
+    
+
+}
+.main-nav
+{
+    float: left;
+    list-style: none;
+    margin-left: 100px;
+    margin-top:50px;
+}
+
+.main-nav li
+{
+    display: inline-block;
+}
+
+.main-nav li a
+{
+    color: white;
+    text-decoration: none;
+    padding: 7px 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: 52px;
+}
+.main-nav li.active a
+{
+    border: 1px solid white;
+
+}
+
+.row
+{
+    max-width: 1400px;
+    margin: auto;
+
+}
+
+.hero
+{
+    position: absolute;
+    width: 1000px;
+    margin-left: 0px;
+    margin-top: 0px;
+
+}
+
+h1
+{
+    color: white;
+    text-transform: uppercase;
+    font-size: 110px;
+    text-align: center;
+    margin-top: 380px;
+    margin-left: 420px;
+}
+
+.pre img
+
+{
+   width: 1200px;
+   height: auto;
+   margin-top: 550px;
+   margin-left: 100px;         
+}
+
+
+p
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 72px;
+    width: 1200px;
+    text-align: left;
+    margin-top: 80;
+    margin-left: 100;
+}
+
+.button
+{
+    margin-top: 180px;
+    margin-left: 0px;
+    margin-bottom: 100px;
+}
+.btn
+{
+    border: 1px solid white;
+    padding: 30px 40px;
+    color: white;
+    text-decoration: none;
+    margin-left: 500px ;
+    font-size: 51px;
+    text-transform: uppercase;
+}
+
+.btn-one
+{
+    background-color:#ff0000;
+    font-family: "Roboto", sans-serif;
+
+}
+
+
+
+.btn-one:hover
+{
+    background-color: lightseagreen ;
+    transition: all 0.5s ease-in;
+}
+}
