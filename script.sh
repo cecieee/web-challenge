@@ -1,8 +1,7 @@
 #!/bin/bash
-
-# AUTHOR : github.com/r-aravind
+ 
 # MADE WITH <3 BY DEVCOM
-# 
+#
 
 ls task-1 > names.txt 
 
@@ -20,3 +19,5 @@ BEGIN {
 }' names.txt >> README.MD
 
 rm names.txt
+
+
