@@ -15,7 +15,7 @@ BEGIN {
 }
 
 { 
-	print("* ", $0, ": [click here to view page] (https://cecieee.github.io/web-challenge/task-1/", $0, "/)", OFS="") 
+	print("* ", $0, ": [click here to view page](https://cecieee.github.io/web-challenge/task-1/", $0, "/)", OFS="") 
 	
 }' names.txt >> README.MD
 
