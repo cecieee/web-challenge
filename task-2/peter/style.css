@@ -1,0 +1,141 @@
+*{
+
+ margin:0;
+padding:0;
+font-family:"Arial",san-serif;
+color:white;
+}
+
+
+#full {
+ background-color:#4bbdec;
+ height:210vh;
+ background-size:cover;
+ background-position:center;
+}
+
+.logo img{
+       float:left;
+       margin-left:16px;
+       height:16vh;
+       width:auto;
+}
+
+
+.title{
+  position:absolute;
+  top:40%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  color:white;
+}
+.title h1{
+  font-size:50px;
+  color:white;
+  text-align:center; 
+   font-family:'Montserrat',black;
+  text-shadow: 1px 2px 2px red;
+  padding-bottom:10px;
+}
+
+.title p{
+   
+  line-height:1.4;
+  text-align:center; 
+   font-family:'Montserrat';
+   font-size:20px;
+}
+.button{
+  margin-top:280px;
+  position:absolute;
+  top:60%;
+  left:30%;
+  transform: translate(-50%,-50%);
+  margin-left:160px;
+}
+
+.button img{
+left:30%;
+}
+
+.button a:hover {
+  background-color:black;
+  }
+.button img{
+height:26vh;
+padding-top:16px;
+}
+.btn{
+ left:60%;
+ border:2px solid #fff;
+ padding:15px 15px;
+ color:#fff;
+ text_decoration:none;
+}
+
+#lis1 {
+
+position:relative;
+float:left;
+margin-top:700px;
+left:5%;
+
+}
+
+#lis3{
+
+
+position:relative;
+margin-top:700px;
+float:right;
+right:14%;
+
+}
+
+.li{
+
+font-size:20px;
+
+}
+
+.button img {
+height:180px;
+margin-left:-60px;
+
+}
+.t2 h1{
+color:black;
+}
+
+.t2 {
+
+padding:40px;
+height:40vh;
+width:50vh;
+background-color:coral;
+}
+
+table, td, th {
+  border: 3px solid black;
+  font-size:24px;
+}
+
+.re{
+color:green;
+}
+.de {
+color:red;
+}
+
+table {
+  border-collapse:collapse;
+  width:80%;
+  margin-left:130px;
+ 
+ }
+
+th {
+  text-align: left;
+  height:50px;
+}
+table tr:hover {background-color: #ddd;}

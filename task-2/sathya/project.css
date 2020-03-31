@@ -1,0 +1,77 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: url(23912.jpg);
+	background-size: cover;
+	background-position: left;
+	font-family: sans-serif;
+	border-style: solid;
+	border-width: 20px;
+	border-color:#660033;
+
+}
+p{
+	margin: 60px;
+	line-height: 2em;
+}
+h1{
+
+	margin: 60px;
+	text-align: center;
+	font-size:70px;
+	font-family:monospace;
+}
+h2{
+	margin: 60px;
+}
+.img1{
+	margin: 60px;
+	top: 40%;
+}
+.dis{
+	margin: 60px;
+}
+.para{
+	padding: 30px;
+	position: absolute;
+	top: 40%;
+	left: 28%;
+	width: 600px;
+	background: #660033;
+	border-radius: 10px;
+	color: white;
+	text-shadow: -1.5px 0 black;
+}
+.ls{
+	margin: 60px;
+
+
+}
+.symptoms{
+	padding: 30px;
+	position: absolute;
+	top: 220%;
+	left: 48%;
+	width: 600px;
+	background: #660033;
+	border-radius: 10px;
+	color: white;
+	text-shadow: -1.5px 0 black;
+}
+.reg{
+	 margin: 60px;
+
+}
+.ref{
+	padding: 30px;
+	position: absolute;
+	top: 530%;
+	left: 58%;
+	width: 260px;
+	background: #660033;
+	border-radius: 10px;
+	color: white;
+	text-shadow: -1.5px 0 black;
+}
+
+
