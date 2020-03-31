@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.main-view {
+  background-color: #0a0a0a;
+  color: #fafafa;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.message {
+  display: inline-block;
+  font-family: "montserrat", "sans serif";
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+  font-size: 15px;
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.cov-img {
+  position: absolute;
+  align-self: center;
+  width: auto;
+  height: 450px;
+}
+
+.content {
+  background-color: #0a0a0a;
+  color: #fafafa;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.cov-doc {
+  padding-left: 30px;
+  font-family: "Montserrat";
+  width: 490px;
+}
+
+.whats-corona {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 86.4%;
+}
+
+.smally {
+  font-size: 27px;
+  padding-bottom: 30px;
+}
+
+.main-content {
+  padding-top: 25px;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.main-content a {
+  font-style: italic;
+  text-decoration: underline;
+  color: #fafafa;
+}
+.main-content a:hover {
+  text-decoration: none;
+}
+.cont-cov-img {
+  height: auto;
+  align-self: center;
+  width: 350px;
+  padding-right: 150px;
+}
+
+.cont-cov-img:hover {
+  transition: 1s ease;
+  transform: translateY(-10px);
+}
+.middle {
+  position: absolute;
+  top: 96%;
+  left: 50%;
+  display: inline-block;
+  transform: translate(-50%, -50%);
+}
+footer {
+  height: 25vh;
+  background-color: #111111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: "Montserrat";
+}
+
+.sal {
+  color: #d8d8d8;
+  font-weight: 400;
+}
+
+.icons-bott {
+  display: flex;
+  justify-content: space-evenly;
+  width: 300px;
+  list-style: none;
+}
+
+.soc-links {
+  text-decoration: none;
+  color: #858585;
+}
+.soc-links:hover {
+  transition: 0.5s ease;
+  color: #d8d8d8;
+}
+.mouse {
+  width: 20px;
+  height: 36px;
+  border: 1px solid #fafafa;
+  display: inline-block;
+  border-radius: 60px;
+}
+.mouse::before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  top: 2px;
+  background: #fafafa;
+  left: 43.5%;
+  transform: translateX(-10%);
+  border-radius: 50%;
+  opacity: 1;
+  animation: mouse 2s infinite;
+}
+@keyframes mouse {
+  from {
+    opacity: 1;
+    top: 10px;
+  }
+  to {
+    opacity: 0;
+    top: 25px;
+  }
+}
+
+/* symptoms of corona part */
+main {
+  background-color: #0a0a0a;
+  color: #fafafa;
+  font-family: "Montserrat";
+}
+
+.red {
+  font-weight: 600;
+  color: #d5322f;
+  text-align: center;
+}
+.symptoms-div {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.symp-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.symptoms {
+  height: 200px;
+  width: 150px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.symp-box {
+  height: 150px;
+  width: 150px;
+  background-color: #111111;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.symb-label {
+  font-weight: 600;
+  font-style: italic;
+}
+
+.prevention {
+  height: 125vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.syp-head {
+  font-weight: 400;
+  font-size: 45px;
+  text-align: center;
+}
+.head-cov {
+  line-height: 86.4%;
+  font-weight: 600;
+  font-size: 59px;
+}
+.prev-tips {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  justify-content: space-around;
+  list-style-type: none;
+}
+.tip-box {
+  width: 33.3%;
+  height: 150px;
+  width: 450px;
+  background-color: #111111;
+  border-radius: 30px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tip-box img {
+  height: 64px;
+  width: 64px;
+}
+
+.prev-textbox {
+  line-height: 1.3;
+  width: 350px;
+}
+
+.top-five {
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.top-five-head {
+  font-weight: 600;
+}
+
+.top-five-tab {
+  background-color: #111111;
+  border-radius: 10px;
+}
+.tf-heading {
+  padding: 10px 10px;
+  height: 30px;
+  background-color: #d5322f;
+  padding: 50px;
+}
+.tf-heading:first-child {
+  border-top-left-radius: 10px;
+}
+.tf-heading:last-child {
+  border-top-right-radius: 10px;
+}
+
+.tf-country {
+  padding: 10px;
+}
+
+.tf-details {
+  text-align: center;
+}
