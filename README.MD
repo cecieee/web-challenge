@@ -18,3 +18,25 @@
 * robin: [click here to view page](https://cecieee.github.io/web-challenge/task-1/robin/)
 * shyam: [click here to view page](https://cecieee.github.io/web-challenge/task-1/shyam/)
 * yasir: [click here to view page](https://cecieee.github.io/web-challenge/task-1/yasir/)
+
+# TASK 2 LINKS
+
+
+* akshay: [click here to view page](https://cecieee.github.io/web-challenge/task-2/akshay/)
+* alwin: [click here to view page](https://cecieee.github.io/web-challenge/task-2/alwin/)
+* aromal-s: [click here to view page](https://cecieee.github.io/web-challenge/task-2/aromal-s/)
+* aswin: [click here to view page](https://cecieee.github.io/web-challenge/task-2/aswin/)
+* deepa: [click here to view page](https://cecieee.github.io/web-challenge/task-2/deepa/)
+* gautham: [click here to view page](https://cecieee.github.io/web-challenge/task-2/gautham/)
+* george: [click here to view page](https://cecieee.github.io/web-challenge/task-2/george/)
+* jesswin: [click here to view page](https://cecieee.github.io/web-challenge/task-2/jesswin/)
+* jobal: [click here to view page](https://cecieee.github.io/web-challenge/task-2/jobal/)
+* joel: [click here to view page](https://cecieee.github.io/web-challenge/task-2/joel/)
+* nikhil: [click here to view page](https://cecieee.github.io/web-challenge/task-2/nikhil/)
+* Nivin: [click here to view page](https://cecieee.github.io/web-challenge/task-2/Nivin/)
+* noel: [click here to view page](https://cecieee.github.io/web-challenge/task-2/noel/)
+* peter: [click here to view page](https://cecieee.github.io/web-challenge/task-2/peter/)
+* robin: [click here to view page](https://cecieee.github.io/web-challenge/task-2/robin/)
+* sathya: [click here to view page](https://cecieee.github.io/web-challenge/task-2/sathya/)
+* shyam: [click here to view page](https://cecieee.github.io/web-challenge/task-2/shyam/)
+* yasir: [click here to view page](https://cecieee.github.io/web-challenge/task-2/yasir/)
