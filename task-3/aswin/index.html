@@ -1,0 +1,117 @@
+<!Doctype html>
+<html>
+<head>
+
+<title>poll</title>
+</head>
+
+<body>
+<h1>COVID-19 poll</h1>
+
+
+<p>Fill up the form</p>
+
+
+
+
+
+<form>
+
+<label for="fname">Name:</label><br>
+<input type="text" id="fname" name="fname"><br>
+
+<p>Choose Gender</p>
+<input type="radio" id="male" name=gender >
+<label for="male">Male</label><br>
+
+<input type="radio" id="female" name=gender>
+<label for="female">Female</label><br>
+
+<input type="radio" id="oth" name=gender>
+<label for="oth">Prefer not to say</label><br>
+<p>Select symptoms</p>
+<input type="checkbox" id="sym1" name=symptom>
+<label for="symptom1">Dry cough</label><br>  
+
+<input type="checkbox" id="sym2" name=symptom>
+<label for="symptom1">Fever</label><br>
+
+<input type="checkbox" id="sym3" name=symptom>
+<label for="symptom1">Difficulty in breathing</label><br>  
+
+<input type="checkbox" id="sym4" name=symptom>
+<label for="symptom1">Tiredness</label><br>  
+
+<label for="fname">Adress Line 1</label><br>
+<input type="text" id="a1" name="fname"><br>
+<label for="fname">Adress line 2:</label><br>
+<input type="text" id="a2" name="fname"><br>
+<label for="fname">PIN:</label><br>
+<input type="text" id="pin" name="fname"><br>
+ 
+
+<label for="District">Choose Your District:</label>
+
+<select id="dist">
+  <option value="unknown">--Not Selected--</option>
+  <option value="Thiruvananthapuram">Thiruvananthapuram</option>
+  <option value="Kollam">Kollam</option>
+  <option value="Pathanamthitta">Pathanamthitta</option>
+  <option value="Alappuzha">Alappuzha</option>
+  <option value="Kottayam">Kottayam</option>
+  <option value="Idukki">Idukki</option>
+  <option value="Ernakulam">Ernakulam</option>
+  <option value="Thrissur">Thrissur</option>
+  <option value="Palakkad">Palakkad</option>
+  <option value="Malappuram">Malappuram</option>
+  <option value="Kozhikode">Kozhikode</option>
+  <option value="Wayanad">Wayanad</option>
+  <option value="Kannur">Kannur</option>
+  <option value="Kasarkod">Kasarkod</option>
+</select> 
+
+
+
+  
+
+
+
+
+</form>
+<button onclick="disp()">Submit</button>
+
+<script type="text/javascript">
+
+function disp() 
+{
+ var ele;
+var sym;
+var name=document.getElementById("fname").value;
+
+if (document.getElementById('male').checked) 
+{
+  ele= 'male';
+}
+
+if (document.getElementById('female').checked) 
+{
+  ele= 'female';
+}
+if (document.getElementById('oth').checked) 
+{
+  ele= 'Prefer not to say';
+}
+s1=document.getElementById('sym1').checked
+s2=document.getElementById('sym2').checked
+s3=document.getElementById('sym3').checked
+s4=document.getElementById('sym4').checked
+alert("Name: "+name+"\n\nGender: "+ ele+"\n\nSymptoms "+"\nDry cough: "+s1+"\nFever: "+s2+"\nDifficulty in breathing:  "+s3+"\nTiredness: "+s4+"\n\nAddress: \n"+a1.value+"\n"+a2.value+"\n\nPIN: "+pin.value+"\n\nDistrict: "+dist.value);
+
+}
+
+
+
+</script>
+
+</body>
+</html>

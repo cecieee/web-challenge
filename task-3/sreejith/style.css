@@ -1,0 +1,111 @@
+
+    html {
+        background-color: black;
+    }
+
+    body {
+  font-family: Verdana, sans-serif;
+  color: rgb(11, 229, 236);
+}
+
+input {
+	border-radius: 5px;
+	padding: 5px;
+    color: black;
+
+}
+h1 {
+    text-align: center;
+    color: darkorchid;
+}
+.boxed {
+    border: 5px solid rgb(7,7,7);
+    float: right;
+    margin-right: 170px;
+    margin-top:50px;
+    background-color: rgb(7,7,7);
+    font-style: italic;
+    font-size: 20px;
+}
+
+button {
+    text-align: right;
+    
+    
+}
+a {
+	text-decoration: none;
+	color: #e51;
+}
+
+form { 
+	width: 480px; 
+	margin: 50px;
+    margin-left: 75px;
+	padding: 5px; 
+	border: solid rgb(248, 5, 26) 10px;	
+	border-radius: 5px;  
+    box-shadow: 5px 5px 0px rgb(194, 21, 21);
+    background-color: black;
+  
+    
+}
+.social {
+            border: none;
+            background: none;
+            color: #fff;
+            font-size: 12px;
+            border-radius: 3px;
+            background-color: #1a8bb6;
+            padding: 5px 8px;
+            outline: none;
+            text-decoration: none;
+        }
+.social:hover {
+            color: #fff;
+            background-color: #316d84;
+        }
+        label, input, .input {
+    	margin: .75rem .5rem;
+    }
+    input[type="text"] {
+    	min-width: 20rem;
+    }
+  
+
+        .inbox {
+      max-width:400px;
+      margin:50px auto;
+      background:rgb(7,7,7);
+      border-radius:5px;
+      border: solid rgb(248, 5, 26) 10px;
+      box-shadow:10px 10px 0 rgba(240, 6, 6, 0);
+      margin-left: 750px;
+      margin-top: -575px;
+    }
+
+    .item {
+      display:flex;
+      align-items:center;
+      border-bottom: 1px solid #F1F1F1;
+    }
+
+    .item:last-child {
+      border-bottom:0;
+    }
+
+    input[type="checkbox"] {
+      margin:20px;
+    }
+
+    p {
+      margin:0;
+      padding:20px;
+      transition:background 0.2s;
+      flex:1;
+      font-family:'helvetica neue';
+      font-size: 20px;
+      font-weight: 200;
+      border-left: 1px solid #D1E2FF;
+      color: cyan;
+    }

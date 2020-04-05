@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+  function myfun() {
+   
+    var x1=document.getElementById('Name').value;
+
+    alert("Name :" +x1);
+  }
+</script>
+<head>
+	<meta charset="UTF-8">
+	<title>form</title>
+	<link rel="stylesheet" href="form.css">
+</head>
+<body>
+  <div id="container">
+  
+      	 <form action="./" id="form">
+          <br>
+              <label>Name</label><input type="text" id="name" placeholder="Name" maxlength="25" required="required">
+              </br>
+              <br>
+                 <label>Email</label><input type="text" id="Email" placeholder="Email Address">
+              </br>
+               <br><label>Phone</label> <input type="text" id="Phone" placeholder="Phone"></br>
+                <br>
+                <div id="Gender">
+                  <h4>Gender</h4>
+                  <input type="radio" id="male" name="gender" value="male" checked="checked">
+                  <label for="male">Male</label><br>
+                  <input type="radio" id="female" name="gender" value="female">
+                  <label for="female">Female</label><br>
+                  <input type="radio" id="other" name="gender" value="other">
+                  <label for="other">Other</label>
+                </div>
+                <div id="Symptoms">
+                  <h4>Symptoms</h4>
+                  <input type="checkbox" name="Symptoms" value="apple"> Fever<br>
+                  <input type="checkbox" name="Symptoms" value="orange"> Dry cough <br>
+                  <input type="checkbox" name="Symptoms" value="banana"> Fatigue <br>
+                   <input type="checkbox" name="Symptoms" value="apple"> Ongoing chest pain or pressure <br>
+                  <input type="checkbox" name="Symptoms" value="orange">Can’t wake up <br>
+                  <input type="checkbox" name="Symptoms" value="banana"> Bluish lips or face <br>
+                </div>
+                  <div id="District"><br> <label for="District">District</label>
+                    <select id="District" name="District">
+                    <option value="australia">Trivandrum</option>
+                    <option value="canada">Kollam</option>
+                    <option value="usa">Pathanamthitta</option>
+                    <option value="australia">Australia</option>
+                    <option value="canada">Alappuzha</option>
+                    <option value="usa">Kottaym</option>
+                    <option value="australia">Idukki</option>
+                    <option value="canada">Ernakulam</option>
+                    <option value="usa">Thrissur</option>
+                    <option value="australia">Palakkad</option>
+                    <option value="canada">Malappuram</option>
+                    <option value="usa">Kozhikode</option>
+                    <option value="australia">Wayanad</option>
+                    <option value="canada">Kannur</option>
+                    <option value="usa">Kannur</option>
+                  </select><br>
+                </dic>
+                  <br>
+                   <label for="Address" id="Address">Address</label>
+                   <textarea id="Address1" name="Address" placeholder="Line 1" style="height:100px"></textarea>
+                   <textarea id="Address1" name="Address" placeholder="Line 2" style="height:100px"></textarea>
+                  <br>
+                  <label>Postal code</label><input type="number" class="input" placeholder="Postal" maxlength="10">
+            <div style="text-align: center;">
+            <p><input type="submit" value="submit"  id="Postal"  onclick="myfun()" ></p>
+          </div>
+
+          </form>
+  </div>
+
+
+</body>
+</html>

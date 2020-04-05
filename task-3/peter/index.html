@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey</title>
+    <link rel="shortcut icon" href="n.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+     <link href='http://fonts.googleapis.com/css?family=Montserrat:black' rel='stylesheet'>
+    <limk href="https://fonts.google.com/specimen/Roboto?selection.family=Roboto" rel="stylesheet">
+    <style>
+      html, body {
+      min-height: 100%;
+      background-color:#871c36;
+      }
+      body, div, form, select, textarea, label { 
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family:'Montserrat', black;
+      font-size:20px;
+      color:black;
+      line-height: 22px;
+      }
+
+    input {
+      padding:0px;
+      margin: 0;
+      outline: none;
+      font-family:Roboto;
+      font-size:20px;
+      color:black;
+      line-height:27px;
+    }
+      h1 {
+      position: absolute;
+      margin: 0;
+      font-size:50px;
+      color: #fff;
+      z-index: 2;
+      line-height: 83px;
+      }
+      .testbox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: inherit;
+      padding: 20px;
+      }
+
+      select {
+      width: 100%;
+      padding:8px;
+      }
+      form{
+      width: 100%;
+      padding: 20px;
+      border-radius: 6px;
+      background:#D3D3D3;
+      box-shadow: 0 0 8px  #cc7a00; 
+      }
+      .banner {
+      position: relative;
+      height: 300px;
+      background-image: url("c.jpg");  
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      }
+      .banner::after {
+      content: "";
+      background-color: rgba(0, 0, 0, 0.2); 
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      }
+      input, select, textarea {
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      }
+      input {
+      width: calc(100% - 10px);
+      padding: 5px;
+      }
+      input[type="date"] {
+      padding: 4px 5px;
+      }
+      textarea {
+      width: calc(100% - 12px);
+      padding: 5px;
+      }
+      .item:hover p, .item:hover i, .question:hover p, .question label:hover, input:hover::placeholder {
+      color: #cc7a00;
+      }
+      .item input:hover, .item select:hover, .item textarea:hover {
+      border: 1px solid transparent;
+      box-shadow: 0 0 3px 0 #cc7a00;
+      color: #cc7a00;
+      }
+      .item {
+      position: relative;
+      margin: 10px 0;
+      }
+      .item span {
+      color: red;
+      }
+      input[type="date"]::-webkit-inner-spin-button {
+      display: none;
+      }
+      .item i, input[type="date"]::-webkit-calendar-picker-indicator {
+      position: absolute;
+      font-size: 20px;
+      color: #cc7a00;
+      }
+      .item i {
+      right: 1%;
+      top: 30px;
+      z-index: 1;
+      }
+      [type="date"]::-webkit-calendar-picker-indicator {
+      right: 1%;
+      z-index: 2;
+      opacity: 0;
+      cursor: pointer;
+      }
+      input[type=radio] {
+      display: none;
+      }
+
+      label.checkbox {
+      position: relative;
+      display: inline-block;
+      margin: 8px 20px 15px 0;
+      padding-left: 23px;
+      cursor: pointer;
+      }
+      label.radio {
+      position: relative;
+      display: inline-block;
+      margin: 8px 20px 15px 0;
+      padding-left: 23px;
+      cursor: pointer;
+      }
+
+      label.radio:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 17px;
+      height: 17px;
+      border-radius: 50%;
+      border: 2px solid #ccc;
+      }
+      input[type=radio]:checked + label:before, label.radio:hover:before {
+      border: 2px solid #cc7a00;
+      }
+      label.radio:after {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: 5px;
+      width: 8px;
+      height: 4px;
+      border: 3px solid #cc7a00;
+      border-top: none;
+      border-right: none;
+      transform: rotate(-45deg);
+      opacity: 0;
+      }
+      input[type=radio]:checked + label:after {
+      opacity: 1;
+      }
+      .btn-block {
+      margin-top: 10px;
+      text-align: center;
+      }
+      button {
+      width: 100%;
+      padding:20px;
+      border: none;
+      border-radius: 5px; 
+      background: #cc7a00;
+      font-size: 16px;
+      color: #fff;
+      cursor: pointer;
+      }
+      button:hover {
+      background: #ff9800;
+      }
+    #sy input{ 
+            width:24px; 
+            height:24px; 
+            font-size:25px;
+            margin-top:18px;
+          }
+
+     #sy label{
+
+      color: red;
+      font-size:27px;
+     }
+      }
+      @media (min-width: 568px) {
+      .name-item, .city-item {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      }
+
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="testbox">
+      <form name="myform" action:"process1.php" method="post">
+        <div class="banner">
+          <h1>COVID-19 Survey</h1>
+        </div>
+        <p align="center"><strong>"We Will Overcome"</strong></p>
+        <div class="item">
+          <label for="name" >Name<span>*</span></label>
+          <input id="name" type="text" name="name" maxlength="25" required />
+        </div>
+        <div class="item">
+          <label for="email">Email</label>
+          <input id="email" type="email" name="email" />
+        </div>
+        <div class="item">
+          <label for="address">Address</label>
+          <input id="address" type="address" name="address" />
+        </div>
+        <div class="item">
+          <label for="city">City<span>*</span></label>
+          <input id="city" type="text" name="city"  required/>
+        </div>
+        <div class="item">
+          <label for="District">District<span>*</span></label>
+  <select name="District" required>
+  <option>
+  <option>Alappuzha</option> <option>Ernakulam</option> <option>Idukki</option>
+  <option>Kannur</option> <option>Kasargode</option><option>Kollam</option>
+  <option>Kottayam</option> <option>Kozhikode</option> <option>Malappuram</option>
+  <option>Palakkad</option> <option>Pathanamthitta</option>  <option>Thiruvananthapuram</option>
+  <option>Thrissur</option> <option>Wayanad</option> </select>
+        </div>
+        <div class="item">
+          <label for="zip">Zip</label>
+          <input id="zip" type="number" name="zip" />
+        </div>
+        <div class="item">
+          <label for="phone">Phone<span>*</span></label>
+          <input id="phone" type="number" maxlength="10" name="phone" />
+        </div>
+        <div class="item">
+          <label for="bdate">Date of Birth</label>
+          <input id="bdate" type="date" name="DOB" />
+          <i class="fas fa-calendar-alt"></i>
+        </div>
+        <div class="question">
+          <label>Gender</label>
+          <div class="question-answer">
+            <div>
+              <input type="radio" value="Male" id="radio_1" name="gender"/>
+              <label for="radio_1" class="radio"><span>Male</span></label>
+            </div>
+            <div>
+              <input  type="radio" value="Female" id="radio_2" name="gender"/>
+              <label for="radio_2" class="radio"><span>Female</span></label>
+            </div>
+            <div>
+              <input  type="radio" value=Others" id="radio_3" name="gender"/ checked>
+              <label for="radio_3" class="radio"><span>Others</span></label>
+            </div>
+          </div>
+        </div>
+        <div>
+
+            <div id="sy">
+          <label>Difficulties you have</label><br>
+
+  <input class="check" class="symptoms" value="Cough" type="checkbox">
+  <label><strong>Cough</strong></label>
+  <input class="check" type="checkbox" value="Fever" class="symptoms" checked>
+  <label><strong>Fever</strong></label> 
+  <input value="Tiredness" class="check" type="checkbox" name="symptoms">
+  <label><strong>Tiredness</strong></label> 
+  <input type="checkbox" name="symptoms" value="Difficulty in breathing" class="check">
+  <label><strong>Difficulty in breathing</strong></label>
+
+
+        </div>
+
+        <div class="btn-block">
+          <button name= "submit" type="submit" onclick="display();"value="display"><strong>SUBMIT</strong></button>
+        </div>
+      </form>
+    </div>
+
+  <script>
+  function display() { 
+        
+   let checkedValue = ""; 
+    let input = document.getElementsByClassName('check');
+for(let i=0;i<4;i++){
+
+      if(input[i].checked === true){
+           checkedValue += input[i].value + " ";
+            
+      }
+}    
+   alert("Thanks for your cooperation \n Press OK to see your submitted response");
+   alert("Name:" + document.myform.name.value + "\n" + "Email :" + document.myform.email.value + "\n" +  "Gender:" + document.querySelector('input[name = gender]:checked').value + "\n" + "Birthdate:" + document.myform.DOB.value + "\n" + "Address:" +document.myform.address.value + "," + document.myform.city.value + "," +document.myform.District.value + " " +document.myform.zip.value + "\n" + 
+           "Phone:" + document.myform.phone.value + "\n" +"\n"+  "Symptoms:" + checkedValue);
+       
+               
+       
+           } 
+</script>  
+
+
+  </body>
+</html> 

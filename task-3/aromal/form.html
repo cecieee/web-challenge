@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viwport" content="width=device-width , initial-scale=1.0">
+	<meta charset="utf-8">
+	<title>Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="form.css">
+<script src="script.js"></script>>
+</head>
+<body>
+	<div class="img"></div>
+	<form action="responce.html" method="PASS">
+	  <div class="contain">
+		  <div  class="name">
+		  	<h2>COVID SURVEY</h2><br><br>
+		    <h4>Name</h4>
+		    <input type="text1" name="Name" id="name" placeholder="Enter your name"><br><br>
+		  </div>  
+		  <div class="gender">
+		    <h4>Gender</h4>
+		    <input type="radio" name="gender" id = "gender"value="male" checked>
+		    <label for="male" class="male">Male</label><br><br>
+		    <input type="radio" name="gender" id="gender" value="female" checked>
+		    <label for="female" class="female">Female</label><br><br>
+		    <input type="radio" name="gender" id = "gender"value="others" checked>
+		    <label for="others" class="oth">Others</label><br><br><br>
+		  </div>
+		  <div  class="checkbox">
+		    <h4>Symptoms</h4>
+		    <input type="checkbox" name="symptoms" id="cb1"  value="Cough" >
+		    <label for="symptoms" class="oth">Cough</label><br><br>
+		    <input type="checkbox" name="symptoms" id = "cb2"  value="Fever">
+		    <label for="symptoms" class="oth">Fever</label><br><br>
+		    <input type="checkbox" name="symptoms" id="cb3"  value="Difficulty in breathing">
+		    <label for="symptoms" class="oth">Difficulty in breathing</label><br><br>
+		    <input type="checkbox" name="symptoms" id="cb4"  value="None of the above">
+		    <label for="symptoms" class="oth">None of the above</label><br><br>
+		  </div>
+		  <div class="addr">
+			  <h4>Address</h4>
+		    <input type="text2" name="Address" id="Address" placeholder ="Address"><br><br><br>
+		    <h4>Pincode</h4><br>
+		    <input type="number" name="Pincode" id="Pincode" placeholder="Pincode">
+		  </div>
+		  <div class="dropdown">
+			<select id="list">
+			  <option>Alappuzha</option>
+			  <option>Ernakulam</option>
+			  <option>Idukki</option>
+			  <option>Kannur</option>
+			  <option>Kasaragod</option>
+			  <option>Kollam</option>
+			  <option>Kottayam</option>
+			  <option>Kozhikode</option>
+			  <option>Malappuram</option>
+			  <option>Palakkad</option>
+			  <option>Pathanamthitta</option>
+			  <option>Thiruvananthapuram</option>
+			  <option>Thrissur</option>
+			  <option>Wayanad</option>
+			</select>  
+		  </div>
+		  <div id="submit" class="sub">
+			<input type="button"  value="Submit" onclick="sub()">
+		  </div>
+		</div>  
+	</form>
+
+</body>
+</html>

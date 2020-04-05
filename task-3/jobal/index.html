@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width intial-scale=1">
+ <title>CORONA Survey</title>
+ 
+  <style>
+      body{
+          
+      }
+      ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  background-color: #333;
+  width:100%;
+  height:auto;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+      #form{
+          align-items: center;
+          margin:50px 10px 35px 20%;
+      }
+      #name{
+          margin-bottom: 20px;
+      }
+      .icon{
+          
+             padding:10px;
+      }
+      #sym-img , #sym-lab
+      {
+          display: flex;
+          flex-direction: column;
+      }
+      #sym-lab{
+          margin-left: 30px;
+          padding-top: 10px;
+      }
+      #symptom-list{
+          width=100vh;
+          display: flex;
+          flex-direction: row;
+          height: auto;
+          flex-wrap: wrap;
+          align-content: space-between;
+          margin: 10px 20px 10px 20px;
+      }
+      #sym-img{
+          width:100px;
+          height: 100px;
+          flex-wrap: wrap;
+      }
+      #sym{
+        margin: 10px 20px 10px 20px;
+      }
+       #address ,#pincode{
+          height: 15px;
+          margin: 25px auto 0px 10px;
+          
+      }
+      #dropdown, #name #submit{
+          margin: 10px;
+          margin-top: 20px;
+      }
+      #dropdown{
+          width:156px;
+      }
+      #submit {
+  background-color: white;
+  color: black;
+  width:100px;
+  border: 2px solid #141414;
+  border-radius: 5px;
+}
+#one {
+    width:100%;
+    height:30px;
+}
+#name ,#two{
+    display: flex;
+    flex-direction: row;
+}
+#gen{
+    margin-top: 25px;
+}
+section{
+    width: 500px;
+    display: flex;
+    flex-direction:row;
+}
+#two{
+    width: 350px;
+    height: auto;
+    margin-left: 300px;
+    margin-top: -100px;
+    animation-name: backdiv;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+}
+@keyframes backdiv {
+    0% {
+      transform: scale(1) rotate(-45deg);
+    }
+    50% {
+      transform: scale(0.6) rotate(-45deg);
+    }
+  }
+#submit:hover {
+  background-color: #555555;
+  color: white;
+}
+ #res{
+     width: 200px;
+     height: auto;
+     margin-left: 20%;
+     background-color: thistle;
+ }
+  </style>
+  <script>
+    function testVariable() {
+            var strText = document.getElementById("name").value; 
+            var strText1 = document.getElementById("address").value;
+            var strText2 = document.getElementById("pincode").value; 
+            var strText3 = document.getElementById("dropdown").value;
+            var result = 'Check the data entered '
+            document.getElementById('res').textContent = result;
+            document.getElementById('spanResult').textContent = 'Name: ' + strText;
+            document.getElementById('spanResult1').textContent = 'Address:' + strText1;
+            document.getElementById('spanResult2').textContent = 'Pin code:' + strText2;
+            document.getElementById('spanResult3').textContent = 'District:' + strText3;
+
+            }
+
+  </script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a class="active" href="#form">Home</a></li>
+            <li><a href="https://www.worldometers.info/coronavirus/" target="blank">Updates</a></li>
+            <li><a href="https://www.mygov.in/covid-19/">Notifications</a></li>
+            <li><a href="https://www.google.com/covid19/" target="blank">More</a></li>
+          </ul>
+    </header>
+    
+<div id="form" name="form" action="/action_page.php" onsubmit="return validateForm()" method="post">
+    
+    <h1 id="title">COVID-19 Survey Form</h1>
+    <div id="one"><section>
+    <label>Name
+    <input   name="fname" id="name" type="text" placeholder="Enter your name" maxlength="25" required></label></section>
+    <div style="clear:right;"><img id ="two" src="https://pngimg.com/uploads/coronavirus/coronavirus_PNG47.png"></div>
+
+    </div>
+    <div id="gen">
+    <label>Gender</label>
+
+ <label><input name="gndr" type="radio" id="rdio" value="male" checked><i class="fa fa-male icon" aria-hidden="true" style="font-size:30px;"></i></label>
+<label><input name="gndr" type="radio" id="rdio" value="female"><i class="fa fa-female icon" aria-hidden="true" style="font-size:30px;"></i></label>
+<label><input name="gndr" type="radio" id="rdio" value="trans"><i class="fa fa-transgender icon" aria-hidden="true" style="font-size:30px;"></i></label>
+</div><div id="add">
+<label>Address</label><textarea id="address" placeholder=" Your address..."></textarea><br>
+<label>Pincode</label><textarea id="pincode" placeholder="Enter your pincode"></textarea><br>
+
+<label id="dropdownmenu" for="dropdown">District 
+<select id="dropdown" >
+  <option disabled selected >choose your district</option>
+  <option>Thiruvananthapuram</option>
+  <option>Kollam</option>
+  <option> Alappuzha</option>
+  <option>Pathanamthitta</option>
+  <option> Kottayam</option>
+  <option> Idukki</option>
+  <option>Ernakulam</option>
+  <option>Thrissur</option>
+  <option>Palakkad</option>
+  <option>Kannur</option>
+  <option>Kasaragod</option>
+</select></label></div>
+
+<p>Do you have any of the following symptoms</p>
+<div id="symptom-list">
+<div id="sym">
+<input name="symptm" type="checkbox" id="check" value="1"  >
+<img  id= "sym-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANEAAADxCAMAAABiSKLrAAAAhFBMVEX///8AAADp6emUlJTw8PBISEj7+/vi4uLGxsbt7e3e3t719fXY2Njk5ORubm5SUlKzs7O+vr7Pz8+Hh4fBwcGqqqpbW1uYmJg0NDSenp5sbGyBgYFlZWVzc3OmpqZ6enpCQkIfHx8NDQ0nJyc3NzdFRUUbGxtPT08lJSULCwsuLi5gYGAoOhrmAAAN7ElEQVR4nO1d63ryKhNtotVotBqP1VarbV97uv/7+wKTAyFAAgzQ7udbf/bbbBNYAYY5Mbm7+6OYHHa36LYYTEN3BAnpMSrxPgvdGQysIhaD0N2xR0J5jPN/zbff+T9PoTtki5jMtbT8a/8fGKX3KHpk/hzklP62fMhyBkP2wiWKdqE6g4JbFK0aF2Y5xUmgzmCArCLuUn5lE6QvOBAweoyiZZC+4EDAaBFFhyB9wYGA0e5vy28Bo+coWgfpCw4EjB7+c4xOUfQUpC84EDB6+fOMvrhLT1H0EqQvOMgZvXKX/j6jG3dp/bcNCjGjhyB9wUHO6Mpdyhkdg/QFBzmjT+5Szug5SF9wkDN64y4N/jyjb+5SzugnSF9wIGb0l43YuOllIMgZLYL0BQc5o3fu0t9ndOEu/Z+RBkbpcBJPJsN05KiBO8roH3fJAaN5Njj+izjc/v2cBtskRm4rZ3Sf/ycpsBmhM5oddjwXDj9nTJdnzujjjnq0AEPK6APp6aPsoYNNiZcEqUnCiAyIE0bJUUFBQGrV/cgecMZoMtCiQ/F5RpAYMSgI2IymfWcbjydrB7UTRtMuWaDCy7C7gQ5GP21G91aPfLbgQ7C2mnsxmA6IjNaWfAiyX8QoeUUglEsr86kXgwmOxGhkKhDaMA6PoDKaofGJzO1oTEYHTEK53jcPzchWxLVhpBnF4JyzZzR6RycUReeAjIY4Mo6HQdgHidHECZ/IxAMfg5PbktHQFSEDSiiM0ps7RtqxLBRGLoRCjb1/Rj9OCemqDzHMVBtGBqadJrSyGO0ZJc4JcalYrhk5FHM1eEd2B6MnK0b3PhjpCDxbRsjaqRT9VTxLRrEnQlHU21KPQXcyZXTxxqi3ucQzmmgxWnoj1D+L0YrRyCOhVrKPE0YvXhn1tCxiSA80YjT3SiiK+sVlbBjZeE5N0C/ebcEI1fPTC72CFzFo6yaMFt4ZXdwy8j9E/TSHGFKhDRi5topE4BMV+jCK+zLyLegAPVaSMaOnIIx6BLam4ObjGF067/OrLtTojKqTA28CRt378zYQo67sTNqvDceIXuxykz0GYtRhoJMjbuBpqW4gmsbsLepKvg0hugHKQyp0MCBAWN0AuhMJbClHKYxcIODzhFvvuRCH1Q2FNkiCqarAgKrNV7dmoEKAvzL/m2dEDk8o5IrSo3Vyu/nKZQMZhspb+VX+flxeuah8SidVk4ljw0nWKeJnq3xGjCwuA+8kfiJ1zypbJD4Ol35WWWrAuj4wMWx44kshd26fqCixkjVGsOPfETZkic5RNQSpsEv0XKlE11UmYWx7sLaD2NG1iaoJ2YqVFKf4tlKX0qeqvTJVKVb+ygbiaVcfmxLMDwi7E9VNeK9S7WbECV66RhNiafdWOcDktywkcQ7lGmHjV67ceaJOkfcPW89GdAvM1L1E2ikTF8bsLycfThiJ3vOs6rZwa4GNN5McjFU1xh9ZcDJMol6tKtEsDAovS9oifXWqaqylSKbK3dgMF0GvsuoglaJfc/EiVC4jQVLmDF/P02cEe8pYfFhMlSEsNuczbEEu2CeTSi1/k9+xEo/RVdGUTG9a4mY8CBYSkQzwL6FSOSkHUmAkKQOvEkLkYd+IjAQOFKL5pOVotVC4xQZCi1FlSSjDpStEJ6zg8Z/VZLy2f1/MnQ/hhFVFXjs8NTFGVq6soZdqjbRVyuKoYj2ODSj214uaEEGGs+cK1itRFQq3SsuWKbb9s7iLV3k7vZKaJwcEP5LI+xbVs55zgyT1L7bt+1Suxz6ECMZ729wo0S5BRqZMbWX3zNcZ8wPBfQq/lk4OZry1kxOCR5J3fSn/SMsle616lW+vQt+YQlHTPBwwStbmEl10YIQUc2Km42y5P2SM4nyVuMbkHgSTUiKT7MmMldDHRZaPdKKQdB+hcSQXdaYHA9Jkrx/RFSsnRJBKnK730v8lFVR2VSribLDT0ZQkE4JIHJG9MP+U3yNtg5nZY/7wfU+kq+160U+rldRboFnn19aUPCheglSrY4foaleEY54T+/n3JWuJQuodpTv4orFgtjQXXbATUUjNPWaIiODEOGU4Xy0PTzuJ5JDeBWL78ZCM4zieTzPYbR/Hst8L3RJRQ0clcr9V4MYGwvR4gX5WYCbYvmUDdCc3YJkGICsSsyyUyE2mOviyagrke6V2JtmOGJ9WaW0gVvUTTYyOab1Z7+jqWTxl8tGkkHgVmV+U8x6zQo+gRbQSe2JtjHl8bRB2vBsdCFwbJgd5hBDuFmwqSD2FEQsVCsICaOtUOEQz4Q8wy5G1/Ttok1pE6EX8A8yCNlmrUayCC3ysiaJhRdRbPWrRodY+q5Omr4Iov7sp7WvxjlZxgaC1kmTxR10IlCAICY6reV3KDuR6ny0rBum5AqEDQvq7Em0p6AwKvcMIrfmOVPylvUIhrkbUw8rimy4PS/w6wLzigLTdtdQ6kHPUneK6yBDnz7Ys41DizBEqAmCPzHC5w7sLRrybFyZXOXI4bUiRumDEKaqFslD+6bqccSNIj7RSm+G6YieqtyCHxacoWPen1CjVQlN4FwKa8Rs7r9DMdODxbF/firP2yg2IDb9Yt9GFxjv9sPs4Bu8erpScK3PRffH2ptayM19NKWfqfVd2/pi97KFY7rCptJrqJrz2I/ArwDtD6XQHmiqemYrPKD9f1+/jkpVpDZHqp/xv9nFlPMoXkyeUN69XAm2KlegePxkwzEr/v776Ve4CkupRrPZq203NjhVhBe1NozBLpR6yOlhsU13KCMWS0qxRWOhyctk/Kimp59zcrP6PGj8GS2nYo7eb4+VxsVfojpMleZt8qsj5Y23t8QcRoeUBGFiL5fGhFB5NUQgGz3FjpQ0m+sIBXoLxjJkOrozkYIex9sI826y/S+vBHYB2DX1v4wFXGIldwo2t+WjsOQJRq6E6ZPrztMDw0HKyNcq98+FCw1qdoPprVI0HO1x/qmeC+PeuOTfajqW1idFDp52G+44G/S6ajQhLj65ba3G0b/3o8azt4wEB0/82mjirqVILgkwLyeJP2kP5rDn7wD7rb/7R3umFNlpZdO9nhShKt63iL3qKGvht+gtjGozSU5yaSRxv+87GJjwpLdsUGPVfgQZjxBiHb32/lNkkpTXvdGcdXUd6VlUpwy4HLdE1XFavQks66EoGuij4z4Z0IPuMbselgYswzagyrRdjhUne//dbzTEFWKhq042ebQCeVg29E6aQZg05nwAflY47l96AmRSDDJh0OuO6034HXgF6J39IqMct5uaEWxQuaj2vHRgEN9deejMU33zQu6kYpDfErBg0FNuyrlOtdIyghvMxMCvsyYvujZVptsOJ2SBhXuU/6e/ltWn2b7/dHg7rB5xPQ5hgdP/zMjicz4PalWvSmVbQP9yO2z63YeZ24Y9RhftMZIuRaVRs3gy9Y33YRR+cv+Vosak0Uhm09mhUNAJwC7uw5d2S+YRRsP22nv/fRp4jDsPNuhAxSPkR+gDrZpdM8Tb8Z2OJiYIn/CkCZn2w739Tyx0rARIAEznY17Kp4oMb7oVTDKG+Ewk2OLK1FlR8zyzUBCk+Qopv8Coga8xrK+UDpXHkhy5DCjs6Qfhv9NpiFlJXpW2jfwaaPpX/dqQfgKBFO9dSQtcti4jEjcICrnPMb1H2xt6NnA0oGqg71PC0rQKQhughObCNG74ORBHha4v9AIIB+0jGXRnEC+CR3Lja3MGgCOCQdKIxEMxCGRTULeDkxEmgPRY8W058hbsw6vfKnUPgHGYhOdpfCSAjGvMwfC/QZWT17Vo5bm72bjVSd8uoVO2wP57eAWe7EUHiRqtX4+RU56cP9+zPp22inoRmcTRShEY8dG6euVX5M83HL3fv10iEz0tfkbl2rE1GWgqJsqxqz5yem+OJ/qD1xtR1+HoFOmDSObAkSiRaDSgZ9fkaSznp8E9319DoTM5fUQHtu1+CDj1h40hhAMA70/DXjtJhPJ+Px+MpRf6P8Tye9BV3K9eTzrtud9Jat2aAqKzTJhjQxhzHeGBL8nQsDMS/a/uFNnJx3EgBmk7hPBMTDDAvYRfIYnCeuwP2isY5GXO8ON+M2HY8WEngMnGmdteA82MeIklnb/P7ub9aZoUvbzJo6meQYJ9wXymB4NnLiqUhOE9+GlCFHJ/4T3xu5YWZ5DYjl+6u2PFxKSAl0akLZeN1iMpD2i5X7beOIYaByLHGBSmCPvP5Mrd2EqgLXuqnVFg43dB9aXQsINzrSBaFOaJ2dqg50JRH1Zcf3eDemYF58meCNVCUq8bXWDNfyn0L4AVAz9kAa0XzMC4STk7MWajdGySlqqxJi5viAJVzPIfdKhRLCTO68+TLFJegOEeGp+BBqo7v6DWLomAnlgwvDgf5VRY4FKUzcNT+glCgHOwSxbcEMeIHe8y3Y4HiOKe9Hv6C924sURRfswwhjIpaGqHkdgNFXZ2rzbn68esvIlR/k8y8O2V51mBntniUHbo3k7vz8ijyLzrEXh2GNFGJqupWv+oEe/3JaN2JU+Vx3P+2YhBV3a2rDqf6+6TeUxG7wZysV1WHZBDX1dRewxUWUCBlKu3ull1ziKnmFOj0Qh8k7JfbFmep2TaaHdiKW++BNTkluM+uLgbL1XiYpiOSZpemw/lqsxw8NOuovf6aTUiMkfz7ikK8/gI9rgujc/+vBj7+8vGpkCi/QF/h9JvXD490+dNB55j9th21G6uBJGfw9fnwl0aniTjZrk+Lx9sXKeT+vjutt9k0wNj8DyN/oJIfQHmoAAAAAElFTkSuQmCC">
+<label id= sym-lab>Fever</label>
+</div>
+<div id="sym">
+<label><input name="symptm" type="checkbox" id="check" value="2" >
+<img id= "sym-img"src="data:image/png;base64,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" ></label>
+<label id= sym-lab>Cough</label>
+</div>
+<div id="sym">
+<label><input name="symptm" type="checkbox" id="check" value="3" >
+<img id= "sym-img"src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQmX2yR3m1nE3c4dqwLHKL1HBIXGNpTEEFhGu5dZ5jxXTlSgpii&usqp=CAU" ></label>
+<label id= sym-lab>Headache</label>
+</div>
+<div id="sym">
+<label><input name="symptm" type="checkbox" id="check" value="4" >
+<img id= "sym-img"src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTCwlJG5BGSg7suckltX_ug6slslb_hHOobnWs7x0GE-2PM40kl&usqp=CAU" ></label>
+<label id= sym-lab>Fatigue</label>
+</div>
+<div id="sym">
+<label><input name="symptm" type="checkbox" id="check" value="5" >
+<img id= "sym-img"src="data:image/png;base64,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" ></label>
+<label id= sym-lab>Sore Throart</label>
+</div>
+<div id="sym">
+<label><input name="symptm" type="checkbox" id="check" value="6" >
+<img id= "sym-img"src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ_N31uy8fQx0DtkHhjmX1jkEOy6QS6cBB-1-seGAHrnKld1Apz&usqp=CAU" ></label>
+<label id= sym-lab>Body Pain</label>
+</div>
+</div>
+
+<button id="submit" onclick="testVariable()">Submit</button>
+</div>
+
+<center>
+<span id="res"></span><br>
+<span id="spanResult"></span><br>
+<span id="spanResult1"></span><br>
+<span id="spanResult2"></span><br>
+<span id="spanResult3"></span><br></center>
+</div>
+</body>
+ </html>

@@ -1,0 +1,207 @@
+<html>
+<head>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <script>
+        // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("landing").style.height = "30%";
+            //document.getElementById("landing").style.background = "#1f1f1f";
+            document.getElementById("head").style.padding = "0";
+            document.getElementById("head").style.margin = "8% 6% 6% 4%";
+            //document.getElementById("head").style.height = "auto";
+            document.getElementById("search").style.display = "inline-block";
+            document.getElementById("page-heading").style.fontSize = "3em";
+            //document.getElementById("page-heading").style.display = "block";
+            document.getElementById("heading-quote").style.display = "none";
+            document.getElementById("side").style.display = "none";
+            document.getElementById("landfoot").style.display = "none";
+          } else {
+            document.getElementById("landing").style.height = "100%";
+            document.getElementById("landing").style.background = "url(img/bg.jpg)";
+            document.getElementById("landing").style.backgroundSize = "cover";
+            document.getElementById("landing").style.backgroundPosition = "center";
+            document.getElementById("landing").style.backgroundAttachment = "fixed";
+            document.getElementById("head").style.padding = "15% 5% 20% 10%";
+            document.getElementById("head").style.height = "92%";
+            document.getElementById("head").style.margin = "0";
+            document.getElementById("search").style.display = "none";
+            document.getElementById("page-heading").style.fontSize = "5em";
+            document.getElementById("heading-quote").style.display = "block";
+            document.getElementById("side").style.display = "block";
+            document.getElementById("landfoot").style.display = "block";
+          }
+        }
+            </script>
+            <!--visibility: visible;-->
+<div class="banner-front" id="landing">
+<div class="headerspace" id="head">
+    <header>
+        <span id="page-heading">Covid-19</span>
+        <span id="heading-quote">"All about the earth shaking pandemic"</span>
+    </header>
+    <aside id="side">
+        <div class="bfcard">
+            <span id="auto-center"><img src="img/sneeze.png" alt="" class="cardimage two"></span>
+            <h6>cover on sneezing.</h6>
+        </div>
+        <div class="bfcard">
+            <img src="img/stayhome.png" alt="" class="cardimage">
+            <h6>Stay home.</h6>
+        </div>
+        <div class="reg">Register</div>
+    </aside>
+    <div id="search"><form class="search"><input type="text" placeholder="search"></form></div>
+</div>
+<div class="bf-footer" id="landfoot">
+    <a href="#nav">
+        <div class="down-smooth">
+        <i class="material-icons">arrow_downward</i>
+        </div>
+    </a>
+</div>
+</div>
+<div class="main">
+    <nav id="nav">
+        <ul class="nav">
+            <li class="nav-link"><a href="index.html">Home</a></li>
+            <li class="nav-link"><a href="forms.html" class="active">Register</a></li>
+            <li class="nav-link"><a href="">statistics</a></li>
+            <li class="nav-link"><a href="">news</a></li>
+            <li class="nav-link nl-right"><a href="">CDC</a></li>
+        </ul>
+    </nav>
+<div class="wrapper" id="wrapper">
+<div class="page1">
+    <h1>Register for checkup</h1>
+    <div class="formbox">
+    <form action="" method="POST" onsubmit="return results();">
+        <h2>Your Details</h2>
+        <div class="row">
+            <div class="col-25">
+                <label for="fname">First Name</label>
+            </div>
+            <div class="col-75">   
+                <input type="text" id="fname" name="firstname" placeholder="Your name.." required><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="lname">Last Name</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="lname" name="lastname" placeholder="Your last name.." required><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <h3>Gender</h3>
+            </div>
+            <div class="col-75">
+                <input type="radio" id="male" name="gender" value="male" checked>
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Rather no say</label><br>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-25">
+                <h3>Symptoms</h3>
+            </div>
+            <div class="col-75">
+                <input type="checkbox" id="one" name="one" value="fever">
+                <label for="one"> Fever</label><br>
+                <input type="checkbox" id="two" name="two" value="cough">
+                <label for="cough"> Cough</label><br>
+                <input type="checkbox" id="three" name="three" value="Shortness of breath">
+                <label for="Shortness of breath"> Shortness of breath</label><br>
+                <input type="checkbox" id="four" name="four" value="Trouble breathing">
+                <label for=""> Trouble breathing</label><br>
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col-25">
+                <label for="District">District</label>
+            </div>
+            <div class="col-75">
+            <select id="country" name="country">
+              <option value="Kasargod">Kasargod</option>
+              <option value="Kannur">Kannur</option>
+              <option value="Wayanad">Wayanad</option>
+              <option value="Kozhikode">Kozhikode</option>
+              <option value="Malappuram">Malappuram</option>
+              <option value="Palakkad">Palakkad</option>
+              <option value="Ernakulam">Ernakulam</option>
+              <option value="Kottayam">Kottayam</option>
+              <option value="Idukki">Idukki</option>
+              <option value="Alappuzha">Alappuzha</option>
+              <option value="Pathanamthitta">Pathanamthitta</option>
+              <option value="Kollam">Kollam</option>
+              <option value="Thiruvananthapuram">Thiruvananthapuram</option>
+            </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+              <label for="address">Address</label>
+            </div>
+            <div class="col-75">
+              <textarea id="address" name="address" placeholder="Address.." style="height:200px"></textarea>
+            </div>
+          </div>
+        <input type="submit" value="Submit">
+    </form>
+    </div>
+    <script>
+        function results() {
+            var firstname = document.getElementById('fname').value;
+            var lastname = document.getElementById('lname').value;
+            var address = document.getElementById('address').value;
+            
+            if (document.getElementById('male').checked) {
+                poll = document.getElementById('male').value;
+            } else if(document.getElementById('female').checked) {
+                poll = document.getElementById('female').value;
+            } else{
+                poll = document.getElementById('other').value;
+            }
+            if (document.getElementById('one').checked) {
+                one = document.getElementById('one').value;
+            } if (document.getElementById('two').checked) {
+                one = document.getElementById('two').value;
+            } if (document.getElementById('three').checked) {
+                one = document.getElementById('three').value;
+            } if (document.getElementById('four').checked) {
+                one = document.getElementById('four').value;
+            }
+
+            document.write("<h1>Take Care!!</h1>");
+            document.write("<h2>This your input</h2>");
+            
+            document.write(firstname, lastname + "<br/>");
+            document.write(poll + "<br/>");
+            document.write("<h3>Symptoms</h3>");
+            document.write(one + "<br/>");
+            document.write(two + "<br/>");
+            document.write(three + "<br/>");
+            document.write(four + "<br/>");
+            document.write("<h3>Address</h3>");
+            document.write(address);
+        }
+    </script>
+    </div>
+</div>
+</div>
+</body>
+</html>

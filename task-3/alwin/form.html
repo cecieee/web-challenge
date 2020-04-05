@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="formstyle.css">
+        <link href="https://fonts.googleapis.com/css?family=Nunito:400,300" rel="stylesheet" type="text/css">
+        <script src="result.js"></script>
+
+    </head>
+    <body>
+        <form action="index.html" method= "POST">
+            <h1>Survey Form</h1>
+            <fieldset>
+
+                <legend><span class="section">1</span>Your Basic Info</legend>
+
+            <label class="" for="name">Name:</label>
+            <input type="text" name="name" id="you" value="">
+
+            <label>Gender:</label>
+            <input type="radio" name="type" value="Male" id="m">
+            <label class="light" for="male">Male</label>
+
+            <input type="radio" name="type" id="f" value="Female" >
+            <label class="light" for="female">Female</label>
+
+            
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend><span class="section">2</span>Patient's Symptoms</legend>
+            <label>Symptoms:</label>
+
+            <input type="checkbox" name="symp" value="Fever">
+            <label class="light" for="symp">Fever</label>
+
+            <input type="checkbox" name="symp" value="Tiredness">
+            <label class="light" for="symp">Tiredness</label><br>
+
+            <input type="checkbox" name="symp" value="Cough">
+            <label class="light" for="symp">Cough</label>
+
+            <input type="checkbox" name="symp" value="Asthma">
+            <label class="light" for="symp">Asthma</label>
+
+            <input type="checkbox" name="symp" value="Diabetes">
+            <label class="light" for="symp">Diabetes</label><br>
+
+            <input type="checkbox" name="symp" value="Heart disease">
+            <label class="light" for="symp">Heart disease</label>
+
+            <input type="checkbox" name="symp" value="Others">
+            <label class="light" for="symp">Others</label>
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend><span class="section">3</span>Address & Details</legend>
+
+                <label class="" for="street">Street Address:</label>
+                <textarea name="textarea-comment" id='add'></textarea>
+                <label class="" for="line2">Address Line 2:</label>
+                <textarea name="textarea-comment" id='add2'></textarea>
+                <label class="" for="pincode">Pincode:</label>
+                <input type="text" name="pincode" id="pin" value="">
+
+                <label for="districts">District:</label>
+                <select id="distro" name="districts">
+                    <option value="Thiruvananthpuram">Thiruvananthpuram</option>
+                    <option value="Kollam">Kollam</option>
+                    <option value="Alappuzha">Alappuzha</option>
+                    <option value="Pathanamthitta">Pathanamthitta</option>
+                    <option value="Kottayam">Kottayam</option>
+                    <option value="Idukki">Idukki</option>
+                    <option value="Ernakulam">Ernakulam</option>
+                    <option value="Thrissur">Thrissur</option>
+                    <option value="Palakkad">Palakkad</option>
+                    <option value="Malappuram">Malappuram</option>
+                    <option value="Kozhikode">Kozhikode</option>
+                    <option value="Wayanad">Wayanad</option>
+                    <option value="Kannur">Kannur</option>
+                    <option value="Kasaragod">Kasaragod</option>
+                </select>
+            </fieldset>
+
+            <button type="submit" onclick="return show()">Submit</button>
+
+        </form>
+
+
+    </body>
+</html>

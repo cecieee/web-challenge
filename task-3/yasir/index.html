@@ -1,0 +1,155 @@
+<html>
+<head>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+<script>
+    // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("landing").style.height = "30%";
+        //document.getElementById("landing").style.background = "#1f1f1f";
+        document.getElementById("head").style.padding = "0";
+        document.getElementById("head").style.margin = "8% 6% 6% 4%";
+        //document.getElementById("head").style.height = "auto";
+        document.getElementById("search").style.display = "inline-block";
+        document.getElementById("page-heading").style.fontSize = "3em";
+        //document.getElementById("page-heading").style.display = "block";
+        document.getElementById("heading-quote").style.display = "none";
+        document.getElementById("side").style.display = "none";
+        document.getElementById("landfoot").style.display = "none";
+      } else {
+        document.getElementById("landing").style.height = "100%";
+        document.getElementById("landing").style.background = "url(img/bg.jpg)";
+        document.getElementById("landing").style.backgroundSize = "cover";
+        document.getElementById("landing").style.backgroundPosition = "center";
+        document.getElementById("landing").style.backgroundAttachment = "fixed";
+        document.getElementById("head").style.padding = "15% 5% 20% 10%";
+        document.getElementById("head").style.height = "92%";
+        document.getElementById("head").style.margin = "0";
+        document.getElementById("search").style.display = "none";
+        document.getElementById("page-heading").style.fontSize = "5em";
+        document.getElementById("heading-quote").style.display = "block";
+        document.getElementById("side").style.display = "block";
+        document.getElementById("landfoot").style.display = "block";
+      }
+    }
+        </script>
+        <!--visibility: visible;-->
+<div class="banner-front" id="landing">
+<div class="headerspace" id="head">
+    <header>
+        <span id="page-heading">Covid-19</span>
+        <span id="heading-quote">"All about the earth shaking pandemic"</span>
+    </header>
+    <aside id="side">
+        <div class="bfcard">
+            <span id="auto-center"><img src="img/sneeze.png" alt="" class="cardimage two"></span>
+            <h6>cover on sneezing.</h6>
+        </div>
+        <div class="bfcard">
+            <img src="img/stayhome.png" alt="" class="cardimage">
+            <h6>Stay home.</h6>
+        </div>
+        <div class="reg">Register</div>
+    </aside>
+    <div id="search"><form class="search"><input type="text" placeholder="search"></form></div>
+</div>
+<div class="bf-footer" id="landfoot">
+    <a href="#nav">
+        <div class="down-smooth">
+            <i class="material-icons">arrow_downward</i>
+        </div>
+    </a>
+</div>
+</div>
+<div class="main">
+    <nav id="nav">
+        <ul class="nav">
+            <li class="nav-link"><a href="index.html" class="active">Home</a></li>
+            <li class="nav-link"><a href="forms.html">Register</a></li>
+            <li class="nav-link"><a href="">statistics</a></li>
+            <li class="nav-link"><a href="">news</a></li>
+            <li class="nav-link nl-right"><a href="">CDC</a></li>
+        </ul>
+    </nav>
+<div class="wrapper" id="wrapper">
+<div class="page1">
+    <h1>Coronavirus</h1>
+    <div class="article-pic"><img src="img/virus.png" alt=""  class="pic"></div>
+    <div><p>
+        Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.<br><br>
+        Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment.  Older people, and those with underlying medical problems like cardiovascular disease, diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness.<br><br>        
+        The best way to prevent and slow down transmission is be well informed about the COVID-19 virus, the disease it causes and how it spreads. Protect yourself and others from infection by washing your hands or using an alcohol based rub frequently and not touching your face. <br><br>    
+        The COVID-19 virus spreads primarily through droplets of saliva or discharge from the nose when an infected person coughs or sneezes, so it�s important that you also practice respiratory etiquette (for example, by coughing into a flexed elbow).    
+        At this time, there are no specific vaccines or treatments for COVID-19. However, there are many ongoing clinical trials evaluating potential treatments. WHO will continue to provide updated information as soon as clinical findings become available.<br>
+    </p></div>
+    <div class="link-bar">
+        <a href="" class="boxlink left">Learn more</a>
+        <a href="" class="boxlink right">Statistics</a>
+    </div>
+    <div class="list">
+        <h1>Symptoms</h1>
+        <ul class="gen-list">
+            <li>Fever</li>
+            <li>Cough</li>
+            <li>Shortness of breath</li>
+            <li>Trouble breathing</li>
+            <li>Persistent pain or pressure in the chest</li>
+            <li>New confusion or inability to arouse</li>
+            <li>Bluish lips or face</li>
+        </ul>
+    </div>
+    <div class="list">
+        <h1>Preventions and Precautions</h1>
+        <ol class="gen-list">
+            <li>Clean your hands often</li>
+            <li>Avoid close contact</li>
+            <li>Stay home if you’re sick</li>
+            <li>Cover coughs and sneezes</li>
+            <li>Wear a facemask if you are sick</li>
+            <li>Clean and disinfect</li>
+        </ol>
+    </div>
+    <h1>Most affected countries</h1>
+    <table class="country">
+        <tr>
+          <th>country</th>
+          <th>Reported cases</th>
+          <th>deaths</th>
+        </tr>
+        <tr>
+          <td>USA</td>
+          <td>116,050</td>
+          <td>1,937</td>
+        </tr>
+        <tr>
+          <td>Italy</td>
+          <td>92,472</td>
+          <td>10,023</td>
+        </tr>
+        <tr>
+          <td>China</td>
+          <td>81,394</td>
+          <td>3,295</td>
+        </tr>
+        <tr>
+          <td>Spain</td>
+          <td>72,248</td>
+          <td>5,812</td>
+        </tr>
+        <tr>
+          <td>Germany</td>
+          <td>56,202</td>
+          <td>403</td>
+        </tr>
+    </table>
+</div>
+</div>
+</div>
+</body>
+</html>

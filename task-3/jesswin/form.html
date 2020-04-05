@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Form</title>
+  </head>
+  <body class="f-body">
+    <h1 class="surv-head">Survey On Covid19</h1>
+    <div class="f-box">
+      <form>
+        <label for="name">Name<span class="req">*</span> : </label>
+        <input
+          type="text"
+          name="name"
+          autocomplete="off"
+          class="round-tbox"
+          style="width: 250px; padding-left: 10px;"
+          id="name"
+        />
+        <br /><br />
+        <label for="gender">Select your gender:</label>
+        <br /><br />
+        <input type="radio" name="gender" value="Male" /> Male
+        <input type="radio" name="gender" value="Female" /> Female
+        <input type="radio" name="gender" value="NONE" checked /> Not willing to
+        say <br /><br />
+        <label for="address">Address<span class="req">*</span></label>
+        <br /><br />
+        <textarea
+          name="address"
+          id="addr"
+          cols="55"
+          rows="5"
+          placeholder="Enter your Address"
+          class="round-tbox"
+        ></textarea>
+        <br /><br />
+        <label for="PIN">PIN Code<span class="req">*</span>:</label>
+        <br /><br />
+        <textarea
+          name="PIN"
+          id="pin"
+          cols="30"
+          rows="1"
+          placeholder="Enter you PIN.."
+          class="round-tbox"
+        ></textarea>
+        <br /><br />
+        <label for="district"
+          >Select your district<span class="req">*</span>:</label
+        >
+        <select name="district" class="dist-sel">
+          <option value="Malappuram" class="dist-op">Malappuram</option>
+          <option value="Thiruvananthapuram" class="dist-op" selected>
+            Thiruvananthapuram
+          </option>
+          <option value="Ernakulam" class="dist-op">Ernakulam</option>
+          <option value="Thrissur" class="dist-op">Thrissur</option>
+          <option value="Kozhikode" class="dist-op">Kozhikode</option>
+          <option value="Palakkad" class="dist-op">Palakkad</option>
+          <option value="Kollam" class="dist-op">Kollam</option>
+          <option value="Kannur" class="dist-op">Kannur</option>
+          <option value="Alappuzha" class="dist-op">Alappuzha</option>
+          <option value="Kottayam" class="dist-op">Kottayam</option>
+          <option value="Kasaragod" class="dist-op">Kasaragod</option>
+          <option value="Pathanamthitta" class="dist-op">Pathanamthitta</option>
+          <option value="Idukki" class="dist-op">Idukki</option>
+          <option value="Wayanad" class="dist-op">Wayanad</option>
+          <option value="Bengal" class="dist-op">Bengal</option>
+        </select>
+        <br /><br />
+        Symptoms:
+        <br /><br />
+        <label><input type="checkbox" name="symp" value="Fever" /> Fever</label
+        ><br /><br />
+        <label><input type="checkbox" name="symp" value="Cough" /> Cough</label
+        ><br /><br />
+        <label>
+          <input type="checkbox" name="symp" value="Breathlessness" />
+          Breathlessness
+        </label>
+        <br /><br />
+        <label>
+          <input type="checkbox" name="symp" value="Diarrhea" />
+          Diarrhea
+        </label>
+        <br /><br />
+        <div class="but-div">
+          <input type="button" value="Submit" class="submit-btn" />
+        </div>
+      </form>
+    </div>
+    <script src="./assets/script.js"></script>
+  </body>
+</html>

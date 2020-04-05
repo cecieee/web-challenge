@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+body{
+	margin: 0;
+	padding: 0;
+	background: url(23912.jpg);
+	background-size: cover;
+	background-position: left;
+	font-family: 'Josefin Sans', sans-serif ;
+
+}
+p{
+	margin: 60px;
+	line-height: 2em;
+	
+}
+h1{
+
+	margin: 60px;
+	text-align: center;
+	font-size:70px;
+}
+h2{
+	margin: 60px;
+}
+.img1{
+	margin: 60px;
+	top: 40%;
+}
+.dis{
+	margin: 60px;
+}
+.para{
+	position: relative;
+	margin-top: -500px;
+	left: 418px;
+	width: 600px;
+	padding: 50px;
+	background:rgba(255,255,255,.2);
+	box-shadow: 0 5px 15px rgba(0,0,0,.5);
+	border-radius: 40px;
+}
+.ls{
+	margin: 60px;
+
+
+}
+.symptoms{
+	padding: 30px;
+	position: absolute;
+	top: 210%;
+	left: 48%;
+	width: 600px;
+	padding: 50px;
+	background:rgba(255,255,255,.2);
+	box-shadow: 0 5px 15px rgba(0,0,0,.5);
+	border-radius: 40px;
+}
+.reg{
+	 margin: 60px;
+
+}
+.ref{
+	padding: 30px;
+	position: absolute;
+	margin-top: -400px;
+	left: 58%;
+	width: 260px;
+	background:rgba(255,255,255,.2);
+	box-shadow: 0 5px 15px rgba(0,0,0,.5);
+	border-radius: 40px;
+}
+
+.box2{
+	margin-top: 0px;
+	margin-left: 50px;
+	font-size: 15px;
+	font-weight: 30px;
+	padding: 50px;
+	background:rgba(255,255,255,.2);
+	box-shadow: 0 5px 15px rgba(0,0,0,.5);
+	border-radius: 40px;
+}
+.H2{
+	margin-top: 30px;
+	background:rgba(255,255,255,.2);
+	box-shadow: 0 5px 15px rgba(0,0,0,.5);
+	border-radius: 40px;
+	text-align: center;
+	width: 130px;
+	
+}
+.dis{
+	position: relative;
+	margin-top: -1px;
+	margin-left: 60px;
+	width: 600px;
+	padding: 50px;
+	background:rgba(255,255,255,.2);
+	box-shadow: 0 5px 15px rgba(0,0,0,.5);
+	border-radius: 40px;
+}
+.lifestyle{
+	position: relative;
+	margin-top: 100px;
+	margin-left: 130px;
+	width: 1000px;
+	padding: 50px;
+	background:rgba(255,255,255,.2);
+	box-shadow: 0 5px 15px rgba(0,0,0,.5);
+	border-radius: 40px;
+
+}
+.transmission{
+	position: relative;
+	margin-top: 400px;
+	margin-left: 130px;
+	width: 600px;
+	padding: 50px;
+	background:rgba(255,255,255,.2);
+	box-shadow: 0 5px 15px rgba(0,0,0,.5);
+	border-radius: 40px;
+}
+

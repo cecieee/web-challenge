@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="bg.css">
+    <script src="func.js"></script>
+</head>
+<body>
+    <meta name="=viewport" content="width=device-wwidth,initial-scale=1.0">
+    <section class=s1>
+    <h1 class="h1">Survey Form</h1>
+    <br>
+    <form class="f1">
+        <label>Name:</label><input type="text" width="25 " id="textfield" >
+        <br>
+        <br>
+        <label>Gender:</label>
+        <section class="s2" id="radio">
+        Male<input type="radio" id="Male" name="Gender" value="Male" checked>
+            <br>
+        Female<input type="radio" id="Female" name="Gender" value="Female">
+            <br>
+        Other<input type="radio" id="Other" name="Gender" value="Other">
+        </section>
+            <br>
+            <br>
+        <label>Symptoms:</label>
+        <br>
+        <section class="s3" id="s3">
+        Fever<input type="checkbox"  name="check" value="fever" >
+            <br>
+            <br>
+        Dry cough<input type="checkbox" name="check" value="Dry cough" >
+            <br>
+            <br>
+        Shortness of breath<input type="checkbox" name="check" value="shortness of breath" >
+            <br>
+            <br>
+        Sore throat<input type="checkbox" name="check" value="sore throat" >
+            <br>
+        </section>
+            <br>
+        <label>Address:&nbsp;</label>
+        <section class="s4" id="s4"><textarea rows="25" cols="50" id="textarea"></textarea></section>
+             <br>
+             <br>
+        <label>District:</label><select id="district">
+            <option value="Thiruvananthapuram">Thiruvananthapuram</option>
+            <option value="kollam">Kollam</option>
+            <option value="Pathanamthitta">Pathanamthitta</option>
+            <option value="Alapuzha">Alapuzha</option>
+            <option value="Kottayam">Kottayam</option>
+            <option value="Ernakulam">Ernakulam</option>
+            <option value="Idukki">Idukki</option>
+            <option value="Thrissur">Thrissur</option>
+            <option value="Palakkad">Palakkad</option>
+            <option value="Malappuram">Malappuram</option>
+            <option value="Kozhikode">Kozhikode</option>
+            <option value="Wayanad">Wayanad</option>
+            <option value="Kannur">Kannur</option>
+            <option value="kasaragod">kasaragod</option>
+        </select>
+        <br>
+        <input type="button" name="submit" value="submit" onclick="func()">    
+    </form>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <p id="p5"></p>
+    </section>
+</body>
+</html>
