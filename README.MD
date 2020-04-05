@@ -1,4 +1,7 @@
-# TASK 1 LINKS
+# WEB CHALLENGE
+
+
+## task-1/ LINKS
 
 
 * akshay: [click here to view page](https://cecieee.github.io/web-challenge/task-1/akshay/)
@@ -19,7 +22,7 @@
 * shyam: [click here to view page](https://cecieee.github.io/web-challenge/task-1/shyam/)
 * yasir: [click here to view page](https://cecieee.github.io/web-challenge/task-1/yasir/)
 
-# TASK 2 LINKS
+## task-2/ LINKS
 
 
 * akshay: [click here to view page](https://cecieee.github.io/web-challenge/task-2/akshay/)
@@ -39,3 +42,22 @@
 * sathya: [click here to view page](https://cecieee.github.io/web-challenge/task-2/sathya/)
 * shyam: [click here to view page](https://cecieee.github.io/web-challenge/task-2/shyam/)
 * yasir: [click here to view page](https://cecieee.github.io/web-challenge/task-2/yasir/)
+
+## task-3/ LINKS
+
+
+* akshay: [click here to view page](https://cecieee.github.io/web-challenge/task-3/akshay/)
+* alwin: [click here to view page](https://cecieee.github.io/web-challenge/task-3/alwin/)
+* aromal: [click here to view page](https://cecieee.github.io/web-challenge/task-3/aromal/)
+* aswin: [click here to view page](https://cecieee.github.io/web-challenge/task-3/aswin/)
+* george: [click here to view page](https://cecieee.github.io/web-challenge/task-3/george/)
+* goutham: [click here to view page](https://cecieee.github.io/web-challenge/task-3/goutham/)
+* jesswin: [click here to view page](https://cecieee.github.io/web-challenge/task-3/jesswin/)
+* jobal: [click here to view page](https://cecieee.github.io/web-challenge/task-3/jobal/)
+* joel: [click here to view page](https://cecieee.github.io/web-challenge/task-3/joel/)
+* peter: [click here to view page](https://cecieee.github.io/web-challenge/task-3/peter/)
+* sathya: [click here to view page](https://cecieee.github.io/web-challenge/task-3/sathya/)
+* shyam: [click here to view page](https://cecieee.github.io/web-challenge/task-3/shyam/)
+* sreejith: [click here to view page](https://cecieee.github.io/web-challenge/task-3/sreejith/)
+* yasir: [click here to view page](https://cecieee.github.io/web-challenge/task-3/yasir/)
+

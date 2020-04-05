@@ -1,41 +1,48 @@
 #!/bin/bash
- 
-# MADE WITH <3 BY DEVCOM
+
+
+# 	
+# 	Script to automatically generate the README with links to all tasks and induvidual folders
 #
 
-ls task-1 > names.txt 
-
-echo "# TASK 1 LINKS" > README.MD
-
-awk '
-
-BEGIN { 
-	print("\n") 
-}
-
-{ 
-	print("* ", $0, ": [click here to view page](https://cecieee.github.io/web-challenge/task-1/", $0, "/)", OFS="") 
-	
-}' names.txt >> README.MD
 
 
+
+echo "# WEB CHALLENGE" > README.MD
+echo "" >> README.MD
 echo "" >> README.MD
 
+for d in */ ; do
 
-echo "# TASK 2 LINKS" >> README.MD
-ls task-2 > names.txt
+	if [ "$d" != "others/" ]; then	
+		
+		echo "$d"
 
-awk '
+		ls $d  > names.txt
 
-BEGIN { 
-        print("\n") 
-}
+		echo "## $d LINKS" >> README.MD
 
-{ 
-        print("* ", $0, ": [click here to view page](https://cecieee.github.io/web-challenge/task-2/", $0, "/)", OFS="") 
+		awk -v d=$d '
+
+		BEGIN 	{ 
+        		print("\n") 
+		}	
+
+		{ 
+        		print("* ", $0, ": [click here to view page](https://cecieee.github.io/web-challenge/", d, $0, "/)", OFS="") 
         
-}' names.txt >> README.MD
+		}' names.txt >> README.MD
 
-rm names.txt
+		rm names.txt
+	
+		echo "" >> README.MD
 
+	fi
+
+done
+
+
+# 
+#	MADE with <3 by DEVCOM
+#
 
