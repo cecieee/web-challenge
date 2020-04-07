@@ -299,11 +299,9 @@ main {
 .f-box {
   background-color: #111111;
   border-radius: 20px;
-  width: 70vh;
-  height: 115vh;
   display: flex;
   align-items: center;
-  padding-left: 50px;
+  padding:58px 50px;
 }
 
 .surv-head {
